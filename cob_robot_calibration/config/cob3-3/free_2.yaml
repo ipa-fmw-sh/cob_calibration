@@ -21,13 +21,13 @@ dh_chains:
 
 transforms:
     base_footprint_joint:            [ 0, 0, 0, 0, 0, 0 ]
-    arm_cb:                          [ 1, 1, 1, 1, 1, 1 ]
+    arm_cb:                          [ 0, 0, 0, 0, 0, 0 ]
 
-    torso_0_joint:                   [ 1, 1, 1, 1, 1, 1 ]
+    torso_0_joint:                   [ 1, 0, 1, 1, 1, 1 ]
     arm_0_joint:                     [ 1, 1, 1, 1, 1, 1 ]   # joint base_link -> arm_0_link
 
     head_axis_joint:                 [ 0, 0, 0, 0, 0, 0 ]   # torso_upper_neck_tilt_link -> head_axis_link
-    head_color_camera_l_joint:       [ 1, 1, 1, 1, 1, 1 ]   # head_axis_link -> head_color_camera_l_link
+    head_color_camera_l_joint:       [ 1, 1, 0, 1, 1, 1 ]   # head_axis_link -> head_color_camera_l_link
     head_color_camera_r_joint:       [ 0, 0, 0, 0, 0, 0 ]   # head_axis_link -> head_color_camera_r_link
     head_cam3d_rgb_optical_frame_joint: [ 1, 1, 1, 1, 1, 1 ] # head_color_camera_l_link -> head_cam3d_rgb_optical_frame
 
@@ -40,7 +40,7 @@ rectified_cams:
         cx_shift: 0
         cy_shift: 0
     right:
-        baseline_shift: 1
+        baseline_shift: 0
         f_shift: 0
         cx_shift: 0
         cy_shift: 0
